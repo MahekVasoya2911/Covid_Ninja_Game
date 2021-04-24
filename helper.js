@@ -218,10 +218,10 @@ function init() {
     shoot.src = "audio/shoot.mp3";
 
     capsule_collect = new Audio();
-    capsule_collect.src = "Audio/capsule2.mp3";
+    capsule_collect.src = "audio/capsule2.mp3";
 
     win = new Audio();
-    win.src = "Audio/won.wav";
+    win.src = "audio/won.wav";
 
     blast = new Image;
     blast.src = "images/blast.gif";
