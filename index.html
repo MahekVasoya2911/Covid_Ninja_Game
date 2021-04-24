@@ -2,8 +2,6 @@
 
 <head>
     <style>
-        
-        
         #animation img {
             display: none;
             height: 200px;
@@ -11,31 +9,35 @@
         }
 
         #animation img:first-child {
-            display:inline-block;
+            display: inline-block;
         }
 
-        #myCanvas{
-			background-image: url(images/background.jpg);
-			background-size: cover;
+        #myCanvas {
+            background-image: url(images/background.jpg);
+            background-size: cover;
             width: 1000px;
             height: 500px;
         }
+
         #container {
             position: absolute;
-            }
-            #container canvas, #animation {
+        }
+
+        #container canvas,
+        #animation {
             position: absolute;
-            }
-            canvas {
+        }
+
+        canvas {
             border: 1px solid black;
         }
     </style>
 </head>
 
 <body>
-    
+
     <h4 style="margin-left: 20%;">
-        - Press S to Punch || - Press W to Kick || - Press D to Move forward || - Press A to Move backward    <br>
+        - Press S to Punch || - Press W to Kick || - Press D to Move forward || - Press A to Move backward <br>
         Collect the Capsules to increase your Life Immunity.
         <br>
         Hit the Corona virus using 'Punch' & 'Kick' by going 'Near to Corona'.
@@ -51,8 +53,8 @@
         <canvas id="myCanvas"></canvas>
         <div id="animation" style="margin-top: 300px;">
         </div>
-      </div>
-      <script src="helper.js"></script>
+    </div>
+    <script src="helper.js"></script>
 </body>
 
 </html>

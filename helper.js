@@ -17,9 +17,9 @@ var iscapsule3 = false;
 var iscapsule4 = false;
 
 onload = function startAnimation() {
-    
+
     addIdle();
-    
+
     // var ctx = canvas.getContext("2d");
     // var anim = document.getElementById("animation");
     // ctx.(anim, 10, 10);
@@ -66,7 +66,7 @@ function load_images() {
     life_img = new Image();
     life_img.src = "images/life/1.png";
 
-    
+
 
 }
 var boyX = 0;
@@ -202,7 +202,7 @@ function init() {
 
     life = {
         x: W - 375,
-        y: H- 575,
+        y: H - 575,
         w: 400,
         h: 200,
     }
@@ -216,17 +216,17 @@ function init() {
 
     shoot = new Audio();
     shoot.src = "audio/shoot.mp3";
-    
+
     capsule_collect = new Audio();
     capsule_collect.src = "Audio/capsule2.mp3";
-    
+
     win = new Audio();
     win.src = "Audio/won.wav";
 
     blast = new Image;
     blast.src = "images/blast.gif";
 
-    
+
 }
 function isOverlap(rect1, rect2) {
     // console.log(rect1);
@@ -297,7 +297,7 @@ function draw() {
     pen.drawImage(life_img, life.x, life.y, life.w, life.h);
 
 }
-var played=0;
+var played = 0;
 //function of images add in element div
 function addIdle() {
     player.innerHTML = '';
@@ -525,7 +525,7 @@ function inject() {
         frames[i % frameCount].style.display = "none";
         frames[++i % frameCount].style.display = "block";
     }, 100);
-    
+
     setTimeout(() => {
         life_img.src = "images/life/6.png";
         clearInterval(injectAnim);
@@ -692,14 +692,13 @@ gamer = setInterval(() => {
 load_images();
 init();
 
-function audio_play()
-{
+function audio_play() {
 
-    setTimeout(()=>{    
+    setTimeout(() => {
         game_aud = new Audio();
         game_aud.src = "Audio/capsule2.mp3";
         game_aud.play();
-    },500);
+    }, 500);
 
 }
 
